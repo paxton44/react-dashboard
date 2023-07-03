@@ -41,25 +41,25 @@ const Sidebar = () => {
     <Box
     sx={{
       "& .pro-sidebar-inner": {
-        background: `${colors.primary[400]} !important`
+        background: `${colors.primary[400]} !important`,
       },
       "& .pro-icon-wrapper": {
         backgroundColor: "transparent !important",
       },
       "& .pro-inner-item": {
-        padding: "5px 35px 5px 20px !important"
+        padding: "5px 35px 5px 20px !important",
       },
       "& .pro-inner-item:hover": {
-        color: "#868dfb !important"
+        color: "#868dfb !important",
       },
       "& .pro-menu-item.active": {
-        color: "#6870fa !important"
+        color: "#6870fa !important",
       },
     }}
     >
     <ProSidebar collapsed={isCollapsed}>
       <Menu iconShape="square">
-      <MenuItem onAuxClick={() => setIsCollapsed(!isCollapsed)}
+      <MenuItem onClick={() => setIsCollapsed(!isCollapsed)}
         icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
         style={{
           margin: "10px 0 20px 0",
@@ -85,7 +85,7 @@ const Sidebar = () => {
       {!isCollapsed && (
         <Box mb="25px">
           <Box display="flex" justifyContent="center" alignItems="center"> 
-            <img alt="profile-user" width="100px" height="100px" src={`../../assets/user.png`} style={{ cursor: "pointer", borderRadius: "50%"}} />
+            <img alt="profile-user" width="100px" height="100px" src={`../../assets/mitch-flood.jpg`} style={{ cursor: "pointer", borderRadius: "50%"}} />
           </Box>
           <Box textAlign="center">
             <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ m: "10px 0 0 0" }}>
@@ -189,9 +189,6 @@ const Sidebar = () => {
           selected={selected}
           setSelected={setSelected} 
         />
-
-
-
           </Box>
         </Menu>
       </ProSidebar>

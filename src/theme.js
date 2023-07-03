@@ -196,7 +196,7 @@ export const themeSettings = (mode) => {
 
 //   Context Color For Mode Settings
 export const ColorModeContext = createContext({
-    toggleColorMode: () => {}
+    toggleColorMode: () => {},
 });
 
 export const useMode = () => {
@@ -204,11 +204,11 @@ export const useMode = () => {
     
     const colorMode = useMemo(
         () => ({
-          toggleColorMode:
-          setMode((prev) => (prev === "light" ? "dark" : "light")),  
+          toggleColorMode: () =>
+            setMode((prev) => (prev === "light" ? "dark" : "light")),
         }),
         []
-    );
+      );
 // This is how the dark or light mode functions by creating the theme from MUI and passing the mode from the theme settings creating an object with the proper format depending on dark or light mode
     const theme = useMemo(() => createTheme(themeSettings(mode)), [mode])
     return [theme, colorMode];

@@ -29,25 +29,34 @@ const Topbar = () => {
         </IconButton>
       </Box>
       {/* Icons */}
+
+      {/* Light/Dark Mode */}
       <Box display="flex">
-        <iconButton>
-          <DarkModeOutlinedIcon />
-          <LightModeOutlinedIcon />  
-        </iconButton>
-        <iconButton>
+      <IconButton onClick={colorMode.toggleColorMode}>
+          {theme.palette.mode === "dark" ? (
+            <DarkModeOutlinedIcon />
+          ) : (
+            <LightModeOutlinedIcon />
+          )}
+        </IconButton>
+
+      {/* Notifications Button */}
+        <IconButton>
           <NotificationsOutlinedIcon />
-        </iconButton>
+        </IconButton>
 
-        <iconButton>
+      {/* Settings Button */}
+        <IconButton>
           <SettingsOutlinedIcon />
-        </iconButton>
-
-        <iconButton>
+        </IconButton>
+        
+      {/* Person Icon Button */}
+        <IconButton>
           <PersonOutlinedIcon />
-        </iconButton>
+        </IconButton>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
 export default Topbar

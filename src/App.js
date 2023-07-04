@@ -1,12 +1,11 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
-import { useState } from "react";
-// import Team from "./scenes";
+import Team from "./scenes/team/index";
 // import Contacts from "./scenes";
 // import Bar from "./scenes";
 // import Pie from "./scenes";
@@ -31,7 +30,7 @@ function App() {
                     <Topbar setIsSidebar={setIsSidebar} />
                     <Routes>
                       <Route path="/" element={<Dashboard />} />
-                      {/* <Route path="/" element={<Team />} /> */}
+                      <Route path="/team" element={<Team />} />
                       {/* <Route path="/" element={<Contacts />} /> */}
                       {/* <Route path="/" element={<Invoices />} /> */}
                       {/* <Route path="/" element={<Form />} /> */}

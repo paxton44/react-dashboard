@@ -22,9 +22,9 @@ const Item = ({ title, to, icon, selected, setSelected}) => {
   const colors = tokens(theme.palette.mode);
   return (
     <MenuItem active={selected === title} style={{color: colors.grey[100],}} onClick={() => setSelected(title)} icon={icon}>
-    <Typography>
-    <Link />
-    </Typography>
+    <Typography>{title}</Typography>
+    <Link to={to} />
+    
     </MenuItem>
   )
 };

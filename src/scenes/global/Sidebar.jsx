@@ -74,7 +74,7 @@ const Sidebar = () => {
        ml="15px"
        >
         <Typography variant="h3" color={colors.grey[100]}>
-          Admins
+          Admin
         </Typography>
         <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
           <MenuOutlinedIcon />
@@ -104,7 +104,7 @@ const Sidebar = () => {
         to="/"
         icon={<HomeOutlinedIcon />}
         selected={selected}
-        setSelected={selected}
+        setSelected={setSelected}
         />
         <Typography 
         variant="h6"

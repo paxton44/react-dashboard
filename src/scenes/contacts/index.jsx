@@ -90,7 +90,7 @@ const Contacts = () => {
           },
         }}
       >
-        <DataGrid
+        <DataGrid checkboxSelection
           rows={mockDataContacts}
           columns={columns}
           slots={{ Toolbar: GridToolbar }}

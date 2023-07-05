@@ -4,6 +4,7 @@
         "formik",
         "Formik",
         "fullcalendar",
+        "nivo",
         "Scroller",
         "timegrid",
         "Topbar"

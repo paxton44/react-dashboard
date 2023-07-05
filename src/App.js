@@ -13,7 +13,7 @@ import Invoices from "./scenes/invoices";
 import Form from "./scenes/form";
 // import Line from "./scenes";
 // import FAQ from "./scenes";
-// import Calendar from "./scenes";
+// import Calendar from "./scenes/calendar";
 // import Geography from "./scenes";
 
 
@@ -34,11 +34,11 @@ function App() {
                       <Route path="/contacts" element={<Contacts />} />
                       <Route path="/invoices" element={<Invoices />} />
                       <Route path="/form" element={<Form />} />
+                      {/* <Route path="/calendar" element={<Calendar />} /> */}
+                      {/* <Route path="/" element={<FAQ />} /> */}
                       {/* <Route path="/" element={<Bar />} /> */}
                       {/* <Route path="/" element={<Pie />} /> */}
                       {/* <Route path="/" element={<Line />} /> */}
-                      {/* <Route path="/" element={<FAQ />} /> */}
-                      {/* <Route path="/" element={<Calendar />} /> */}
                       {/* <Route path="/" element={<Geography />} /> */}
                     </Routes>
                   </main>                  

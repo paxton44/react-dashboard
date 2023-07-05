@@ -27,6 +27,7 @@ This app serves as a dynamic Dashboard, offering a multitude of features:
 - Streamlined access to the business calendar
 - Comprehensive FAQ section for the company
 - Insightful and visually appealing bar, line, pie, and geographic charts derived from personalized business data.
+- Light and Dark mode feature for all screen preferences. 
 
 Experience the seamless way to manage your company and stay on top of crucial information with this intuitive and user-friendly app.
 ## Table of Contents
@@ -48,4 +49,5 @@ Anyone can contribute to the app, just submit changes on the paxton44 github acc
 ## Questions
 If you have any questions, please contact me directly at mitchflood1@gmail.com 
 Visit my Github [here](https://github.com/paxton44)
-
+## Demo Link
+Click [Here](https://mitch-flood-react-dashboard.web.app/) for a live demo

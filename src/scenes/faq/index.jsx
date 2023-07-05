@@ -15,7 +15,7 @@ const FAQ = () => {
     <Box m="20px">
       <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
       <Accordion defaultExpanded>
-        <AccordionSummary expandedIcon={<ExpandMoreIcon />}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
           </Typography>
@@ -28,7 +28,7 @@ const FAQ = () => {
       </Accordion>
 
       <Accordion defaultExpanded>
-        <AccordionSummary expandedIcon={<ExpandMoreIcon />}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
           </Typography>
@@ -41,7 +41,7 @@ const FAQ = () => {
       </Accordion>
 
       <Accordion defaultExpanded>
-        <AccordionSummary expandedIcon={<ExpandMoreIcon />}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
           </Typography>
@@ -54,7 +54,7 @@ const FAQ = () => {
       </Accordion>
 
       <Accordion defaultExpanded>
-        <AccordionSummary expandedIcon={<ExpandMoreIcon />}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
           </Typography>
@@ -67,7 +67,7 @@ const FAQ = () => {
       </Accordion>
 
       <Accordion defaultExpanded>
-        <AccordionSummary expandedIcon={<ExpandMoreIcon />}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
           </Typography>
@@ -78,6 +78,7 @@ const FAQ = () => {
             </Typography>
           </AccordionDetails>
       </Accordion>
+
     </Box>
   )
 }
